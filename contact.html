@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Website - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('background.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(0, 51, 153, 0.9);
+            color: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header img {
+            height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        }
+
+        .navbar {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li {
+            margin: 0 15px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #ffdd00;
+        }
+
+        .contact {
+            text-align: center;
+            margin: 3rem auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact h1 {
+            color: #003399;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #003399;
+            color: white;
+            font-size: 1rem;
+            padding: 0.7rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #002266;
+        }
+
+        .footer {
+            background-color: #003399;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #ffdd00;
+        }
+
+        .footer .icons {
+            margin: 1rem 0;
+        }
+
+        .footer .icons img {
+            width: 30px;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .footer .icons img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Untitled design.jpg" alt="Meanttor Logo">
+            <h1>Meanttor</h1>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="why_us.html">Why Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contact">
+        <h1>Contact Us</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p>Contact: <strong>7385854649, 8369009117</strong></p>
+        <p>Email: <a href="mailto:us@meanttor.com">us@meanttor.com</a></p>
+        <p>Website: <a href="https://www.meanttor.com" target="_blank">www.meanttor.com</a></p>
+    </section>
+    <footer class="footer">
+        <p>Contact Us: <a href="mailto:us@meanttor.com">us@meanttor.com</a> | Phone: +91-7385854649, +91-8369009117</p>
+        <p>Follow us:</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/meanttor"><img src="https://img.icons8.com/fluent/48/000000/facebook-new.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/meanttor/"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="Instagram"></a>
+            <a href="https://twitter.com/meanttor"><img src="https://img.icons8.com/fluent/48/000000/twitter.png" alt="Twitter"></a>
+        </div>
+        <p>&copy; 2024 Meanttor. All rights reserved.</p>
+    </footer>
+</body>
+</html>
